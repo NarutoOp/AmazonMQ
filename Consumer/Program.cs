@@ -4,10 +4,10 @@ using System.Text;
 
 var factory = new ConnectionFactory
 {
-    Uri = new Uri("amqps://b-6d344f1d-1f71-4e0a-8b46-4658ca551769.mq.us-east-1.amazonaws.com:5671"),
+    Uri = new Uri("<amqs url>"),
     Port = 5671,
-    UserName = "adminarpit",
-    Password = "Arpitadmin1@"
+    UserName = "<USERNAME FROM CONFIGURATION FILE>",
+    Password = "<PASSWORD FROM CONFIGURATION FILE>"
 };
 
 using var connection = factory.CreateConnection();
